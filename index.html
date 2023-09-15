@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <div class="weather-app">
+    <div class="container p-5 rounded">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                class="form-control"
+                id="city-input"
+                placeholder="Type a city"
+              />
+            </div>
+            <div class="col-2">
+              <button
+                type="submit"
+                id="search-form"
+                class="btn btn-primary" />search
+              </button>
+            </div>
+            <div class="col-3">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="current-location-button"
+              />
+             current</button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city">East London</h1>
+          <h2 id="date"></h2>
+          <h3 id="description">Mostly sunny</h3>
+        
+        <div class="row">
+          <div class="col-6 float-right">
+              <img
+              src="images/sun.png"
+              alt="current weather icon"
+              class="current-weather-icon"
+            />
+          
+            <span id="temperature" class="temperature">27</span>
+            <span class="unit" id="unit">°C</span>
+          </div>
+          <div class="col-5 float-left">
+            <ul>
+              <li>Precipitation: <span id="precipitation">23</span>%</li>
+              <li>Humidity: <span id="humidity">28</span>%</li>
+              <li>Wind: <span id="wind">23</span>km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="credits">
+      Coded by
+      ><strong>Yonela Jongola</strong></a
+      <strong>
+        <a href="https://github.com/yonelajongola/my1-Project"
+          >Open-source code</a
+        ></strong
+    <script src="src/index.js"></script>
+  </body>
+</html>
